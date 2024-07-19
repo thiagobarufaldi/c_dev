@@ -1,0 +1,75 @@
+What are the two different kinds of division that the / operator can do? Under what circumstances does it perform each?
+Answer: It can perform bpth integers and double or floating point operations. 
+        When working with whole values the integer operation should be used, while working with decimal places values the double operation should be used.
+
+What are the definitions of the ``Boolean'' values true and false in C?
+Answer: True means the current variable is nonzero, False means that the currenct variable is zero.
+
+Name three uses for the semicolon in C.
+Answer: It can be used as a statement terminator, as a separator for multiple statements and for separating stetaments in the for loop;
+
+What would the equivalent code, using a while loop, be for the example
+	for(i = 0; i < 10; i = i + 1)
+		printf("i is %d\n", i);
+?
+Answer:
+    i = 0;
+    while(i < 10)
+        {
+            printf("i is %d\n", i);
+            i = i + 1;
+        }
+
+
+What is the numeric value of the expression 3 < 4 ? 
+Answer: 1
+
+Under what conditions will this code print ``water''?
+	if(T < 32)
+		printf("ice\n");
+	else if(T < 212)
+		printf("water\n");
+	else	printf("steam\n");
+
+Answer: If 'T' is greater than 32 and lower than 212.
+
+What would this code print?
+	int x = 3;
+	if(x)
+		printf("yes\n");
+	else	printf("no\n");
+Answer: It would always print "yes" because x is set as a nonzero variable.
+
+(trick question) What would this code print?
+	int i;
+
+	for(i = 0; 3 < 3; i = i + 1)
+		printf("a\n");
+		printf("b\n");
+
+	printf("c\n");
+
+Answer: 
+b
+c
+
+1. Write a program to find out (the hard way, by counting them) how many of the numbers from 1 to 10 are greater than 3. (The answer, of course, should be 7.) Your program should have a loop which steps a variable (probably named i) over the 10 numbers. Inside the loop, if i is greater than 3, add one to a second variable which keeps track of the count. At the end of the program, after the loop has finished, print out the count.
+
+2. Write a program to compute the average of the ten numbers 1, 4, 9, ..., 81, 100, that is, the average of the squares of the numbers from 1 to 10. (This will be a simple modification of Exercise 3 from last week: instead of printing each square as it is computed, add it in to a variable sum which keeps track of the sum of all the squares, and then at the end, divide the sum variable by the number of numbers summed.)
+
+If you keep track of the sum in a variable of type int, and divide by the integer 10, you'll get an integer-only approximation of the average (the answer should be 38). If you keep track of the sum in a variable of type float or double, on the other hand, you'll get the answer as a floating-point number, which you should print out using %f in the printf format string, not %d. (In a printf format string, %d prints only integers, and %f is one way to print floating-point numbers. In this case, the answer should be 38.5.)
+
+3. Write a program to print the numbers between 1 and 10, along with an indication of whether each is even or odd, like this:
+	1 is odd
+	2 is even
+	3 is odd
+	...
+(Hint: use the % operator.)
+
+4. On page 3 of chapter 3 of the notes is a scrap of code to print the words ``Northeast'', ``Southwest'', etc. corresponding to the x and y components of a direction of travel. Modify the code to also print ``North'', ``East'', etc. if x or y is 0.
+
+5. Write a program to print the first 7 positive integers and their factorials. (The factorial of 1 is 1, the factorial of 2 is 1 * 2 = 2, the factorial of 3 is 1 * 2 * 3 = 6, the factorial of 4 is 1 * 2 * 3 * 4 = 24, etc.) [Extra credit: why did I only ask for the first 7?]
+
+6. Write a program to print the first 10 Fibonacci numbers. Each Fibonacci number is the sum of the two preceding ones. The sequence starts out 1, 1, 2, 3, 5, 8, ...
+
+7. Make some improvements to the prime number printing program in section 3.6 of the notes. Other than 2, no even numbers are prime, so have the program test only the odd numbers between 3 and 100. Rather than recomputing sqrt(i) each time through the inner loop, compute it just once for each new value of i (that is, compute it at the beginning of the body of the outer loop, just before the beginning of the inner loop) and assign its value to another variable.
