@@ -1,0 +1,29 @@
+1.  How many elements does the array
+
+    	int a[5];
+
+    contain? Which is the first element? The last?
+
+Answer: It contains five elements. The first element is 0 and the last is 4.
+
+2.  What's wrong with this scrap of code?
+
+    	int a[5];
+    	for(i = 1; i <= 5; i = i + 1)
+    		a[i] = 0;
+
+Answer: The first condition should be set for the 0th element and the second condition in the for loop should be i < 5 since the array will never reach the integer 5.  
+
+3.  How might you rewrite the dice-rolling program (from the notes, chapter 4, p. 2) without arrays?
+Answer: The only way I can think of would be creating 12 variables to hold the operations. 
+
+4.  What is the difference between a defining instance and an external declaration?
+Answer: A declaration introduces an identifier and describes its type, a declaration is what the compiler needs to accept references to that identifier.
+		A definition instantiates/implements this identifier, it's what the linker needs in order to link references to those entities.
+		A definition can be used in place of a declaration, and an identifier can be declared as often as one wants. However, it must be defined only once. 
+		If for some reason one forgets to define an identifier, the linker doesn't know what to link and complains about missing symbols.
+		If one defines an identifier more than once, then the linker doesn't know which definitions to link.
+
+5.  What are the four important parts of a function? Which three does a caller need to know?
+Answer: If the function is static or external, what is the return type of the function, the values it takes in as variables and the name of the function.
+		A caller needs to know what is the function type, the name of the function and the number of variables it takes.

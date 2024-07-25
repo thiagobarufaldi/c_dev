@@ -1,17 +1,18 @@
 What are the two different kinds of division that the / operator can do? Under what circumstances does it perform each?
-Answer: It can perform bpth integers and double or floating point operations. 
+Answer: It can perform both integers and double or floating point operations. 
         When working with whole values the integer operation should be used, while working with decimal places values the double operation should be used.
 
 What are the definitions of the ``Boolean'' values true and false in C?
 Answer: True means the current variable is nonzero, False means that the currenct variable is zero.
 
 Name three uses for the semicolon in C.
-Answer: It can be used as a statement terminator, as a separator for multiple statements and for separating stetaments in the for loop;
+Answer: It can be used as a statement terminator, as a separator for multiple statements and for separating the three control expressions in the for loop;
 
 What would the equivalent code, using a while loop, be for the example
 	for(i = 0; i < 10; i = i + 1)
 		printf("i is %d\n", i);
 ?
+
 Answer:
     i = 0;
     while(i < 10)
@@ -31,7 +32,7 @@ Under what conditions will this code print ``water''?
 		printf("water\n");
 	else	printf("steam\n");
 
-Answer: If 'T' is greater than 32 and lower than 212.
+Answer: If 'T' is greater than or equal to 32 and less than 212.
 
 What would this code print?
 	int x = 3;
@@ -50,6 +51,9 @@ Answer: It would always print "yes" because x is set as a nonzero variable.
 	printf("c\n");
 
 Answer: 
+a
+a
+a
 b
 c
 

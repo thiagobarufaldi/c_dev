@@ -3,7 +3,7 @@
 int main()
 {
     int i;
-    double s;
+    double s = 0;
     //or int s;
 
     for(i = 1; i <= 10; i = i + 1)
