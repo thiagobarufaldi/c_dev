@@ -1,0 +1,26 @@
+1.  What would the expression
+
+    	c = getchar() != EOF
+
+    do?
+
+    Answer: Nothing.
+
+2.  Why must the variable used to hold getchar's return value be type int?
+    Answer: Because characters are really small ints in C?
+
+3.  What is the difference between the prefix and postfix forms of the ++ operator?
+    Answer: The prefix will execute the sum before the next interation and the postfix after the next interation;
+
+4.  (trick question) What would the expression
+
+    	i = i++
+
+    do?
+    Answer: It will execute normally but nothing will happen, the value of i will remain unchanged since the addition is postfix.
+
+5.  What is the definition of a string in C?
+    Answer: An array of characters.
+    
+6.  (Advanced) What will the getline function from section 6.3 of the notes do if successive calls to getchar return the four values 'a', 'b', 'c', and EOF? 
+Is getline's behavior reasonable? Is it possible for this situation to occur, that is, for a ``line'' somehow not to be terminated by \n? 
