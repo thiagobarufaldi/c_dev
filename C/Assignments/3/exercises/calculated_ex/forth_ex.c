@@ -5,21 +5,11 @@ For example, the call printnchars('x', 5) would print 5 x's. Use this function t
 
 #include <stdio.h>
 
-void printnchars(int, int);
+extern void printnchars(int, int);
 
 int main()
 {
     printnchars('c', 3);
 
     return 0;
-}
-
-void printnchars(int ch, int n)
-{
-    int i;
-
-    for(i = 0; i < n; i++)
-    {
-        printf("%c\n", ch);
-    }
 }
